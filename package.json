@@ -1,0 +1,12 @@
+{
+  "scripts": {
+    "docs": "documentation build backend/**/*.js -f html -o docs"
+  },
+  "dependencies": {
+    "mongodb": "^6.3.0",
+    "mongoose": "^8.0.3"
+  },
+  "devDependencies": {
+    "documentation": "^14.0.2"
+  }
+}
