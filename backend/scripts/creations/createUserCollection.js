@@ -33,7 +33,7 @@ async function createUserCollection() {
 
   // Define the MongoDBManager with the necessary parameters
   const mongoManager = new MongoDBManager(
-    "JCCGame",
+    "SI_Database",
     "mongodb+srv://userAdmin1:u2TCnGu4ipaZ00Ob@clustersi.6znrvqy.mongodb.net/?retryWrites=true&w=majority"
   );
 

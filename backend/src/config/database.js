@@ -1,7 +1,7 @@
 // backend/src/config/database.js
 
 /**
- * This file is used to connect to the database.
+ * This file is used to connect to the database.n
  */
 
 const mongoose = require("mongoose");
