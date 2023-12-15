@@ -1,0 +1,195 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  margin-right: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+  color: #ffd700; /* Couleur de survol */
+}
+
+/* Styles pour les boutons Connexion et Inscription */
+nav ul:last-child {
+  display: flex;
+  align-items: center;
+}
+
+nav ul:last-child li {
+  margin-right: 10px;
+}
+
+nav ul:last-child a {
+  display: inline-block;
+  padding: 8px 15px;
+  border: 1px solid #ffd700;
+  border-radius: 5px;
+  color: #ffd700;
+  background-color: transparent;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+nav ul:last-child a:hover {
+  background-color: #ffd700;
+  color: #333;
+}
+
+main {
+  padding: 20px;
+}
+
+h1 {
+  border-bottom: 2px solid #333;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+p {
+  line-height: 1.6;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  margin-bottom: 8px;
+}
+
+/* Styles pour le carrousel */
+main ul {
+  display: flex;
+  overflow: hidden;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+}
+
+main ul.activities-list {
+  display: flex;
+  overflow: hidden;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  animation: scroll 20s linear infinite; /* Ajustez la durée selon vos besoins */
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(
+      calc(-100% - 20px)
+    ); /* Ajustez en fonction de la largeur et de l'espacement entre les éléments */
+  }
+}
+
+main ul.activities-list li {
+  flex: 0 0 auto;
+  margin-right: 20px;
+  min-width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  scroll-snap-align: start;
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+  overflow: hidden; /* Empêche le débordement de l'image de la carte */
+}
+
+main ul.activities-list li img {
+  width: 100%; /* Assure que l'image occupe 100% de la largeur de la carte */
+  height: 150px; /* Ajustez la hauteur de l'image selon vos besoins */
+  object-fit: cover; /* Remplit l'espace en conservant les proportions */
+  border-radius: 8px 8px 0 0; /* Coins arrondis pour le haut de la carte */
+}
+
+main li {
+  flex: 0 0 auto;
+  margin-right: 20px;
+  min-width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  scroll-snap-align: start;
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+  overflow: hidden; /* Empêche l'image de déborder de la carte */
+}
+
+main li img {
+  width: 100%; /* Assure que l'image occupe 100% de la largeur de la carte */
+  height: 150px; /* Ajustez la hauteur de l'image selon vos besoins */
+  object-fit: cover; /* Remplit l'espace en conservant les proportions */
+  border-radius: 8px 8px 0 0; /* Coins arrondis pour le haut de la carte */
+}
+
+main li:hover {
+  transform: scale(1.05);
+}
+
+main ul::before,
+main ul::after {
+  content: "";
+  flex: 0 0 auto;
+  width: 20px; /* Ajustez selon votre besoin d'espace entre la fin et le début du carrousel */
+}
+
+main ul::before {
+  background: linear-gradient(to right, transparent, #fff);
+}
+
+main ul::after {
+  background: linear-gradient(to left, transparent, #fff);
+}
+
+main ul:hover::before,
+main ul:hover::after {
+  background: none;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  main ul {
+    flex-wrap: nowrap;
+  }
+}
