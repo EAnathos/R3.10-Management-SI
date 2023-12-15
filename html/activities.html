@@ -10,7 +10,6 @@
   </head>
   <body>
     <header>
-      <!--Barre de navigation avec, sur la partie gauche, une image, et les liens Présentation, Activités, Services, Hébèrgement. Sur la partie droite, on doit retrouver un bouton Connexion et un bouton Inscription-->
       <nav>
         <ul>
           <li><a href="index.html">Présentation</a></li>
@@ -26,40 +25,72 @@
     </header>
     <main>
       <h1>Activités gratuites</h1>
-      <p>
-        Lorsque vous rejoignez notre camping, vous avez accès à un tas
-        d'activités gratuites
-      </p>
-      <ul>
-        <li>Piscine</li>
-        <li>Mini-golf</li>
-        <li>...</li>
+      <ul class="activities-list">
+        <li>
+          <div class="activity-card">
+            <img src="../images/pool.jpg" alt="Piscine" />
+            <p>Piscine</p>
+          </div>
+        </li>
+        <!-- Ajoutez d'autres activités de la même manière -->
       </ul>
       <h1>Activités payantes</h1>
-      <p>
-        Certaines activités sont payantes, mais elles sont toutes encadrées par
-        des professionnels et sont donc de qualité supérieure.
-      </p>
-      <ul>
-        <li>Ski sur Pingouin</li>
-        <li>Récolte de bananes dorées</li>
-        <li>...</li>
+      <ul class="activities-list">
+        <li>
+          <div class="activity-card">
+            <img src="../images/pingouin.jpg" alt="Ski sur Pingouin" />
+            <p>Ski sur Pingouin</p>
+          </div>
+        </li>
+        <!-- Ajoutez d'autres activités payantes de la même manière -->
       </ul>
       <h1>Nos animations</h1>
-      <p>
-        Chaque jour de la semaine, nous vous proposons des animations gratuites
-        !
-      </p>
-      <ul>
-        <li>Lundi : Chasse aux trésors</li>
-        <li>Mardi : Concours de pêche</li>
-        <li>Mercredi : Soirée mousse</li>
-        <li>Jeudi : Soirée dansante</li>
-        <li>Vendredi : Soirée karaoké</li>
-        <li>Samedi : Soirée jeux de société</li>
-        <li>Dimanche : Soirée cinéma</li>
+      <ul class="activities-list">
+        <li>
+          <div class="activity-card">
+            <img src="../images/treasures-hunt.jpg" alt="Chasse aux trésors" />
+            <p>Lundi : Chasse aux trésors</p>
+          </div>
+        </li>
+        <!-- Ajoutez d'autres animations de la même manière -->
       </ul>
     </main>
-    <footer></footer>
+    <footer>
+      <div class="footer-content">
+        <div class="footer-column">
+          <h3>Contact</h3>
+          <p>Email: info@souslestilleuls.com</p>
+          <p>Téléphone: +33 123 456 789</p>
+        </div>
+        <div class="footer-column">
+          <h3>Adresse</h3>
+          <p>123 Rue des Tilleuls</p>
+          <p>75000 Ville Tilleul</p>
+        </div>
+        <div class="footer-column">
+          <h3>Suivez-nous</h3>
+          <ul class="social-icons">
+            <li>
+              <a href="#" target="_blank"
+                ><img src="../images/facebook-icon.png" alt="Facebook"
+              /></a>
+            </li>
+            <li>
+              <a href="#" target="_blank"
+                ><img src="../images/twitter-icon.png" alt="Twitter"
+              /></a>
+            </li>
+            <li>
+              <a href="#" target="_blank"
+                ><img src="../images/instagram-icon.png" alt="Instagram"
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2023 Sous les tilleuls. Tous droits réservés.</p>
+      </div>
+    </footer>
   </body>
 </html>
