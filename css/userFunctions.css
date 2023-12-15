@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Style pour le formulaire d'inscription */
+#signupForm {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#signupForm input {
+    width: 100%;
+    height: 40px;
+    margin: 10px 0;
+    padding: 0 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+#signupForm input:focus {
+    border: 1px solid #000;
+}
+
+#signupForm button {
+    width: 100%;
+    height: 40px;
+    margin: 10px 0;
+    padding: 0 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+}
+
+#signupForm button:hover {
+    border: 1px solid #000;
+}
+
+#signupForm .error {
+    color: red;
+    font-size: 12px;
+    margin: 5px 0;
+}
+
+/* Style pour le formulaire de connexion */
+
+#loginForm {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#loginForm input {
+    width: 100%;
+    height: 40px;
+    margin: 10px 0;
+    padding: 0 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+#loginForm input:focus {
+    border: 1px solid #000;
+}
+
+#loginForm button {
+    width: 100%;
+    height: 40px;
+    margin: 10px 0;
+    padding: 0 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+}
+
+#loginForm button:hover {
+    border: 1px solid #000;
+}
+
+#loginForm .error {
+    color: red;
+    font-size: 12px;
+    margin: 5px 0;
+}
