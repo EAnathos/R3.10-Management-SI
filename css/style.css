@@ -37,6 +37,17 @@ nav ul li a:hover {
   color: #f00;
 }
 
+body {
+  font-family: "Metrophobic";
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+h1 h2 h3 {
+  font-family: "Lobster";
+}
+
 .presentation {
   display: flex;
   justify-content: center;
@@ -49,13 +60,6 @@ nav ul li a:hover {
 .presentation h1 {
   font-size: 5rem;
   font-weight: 600;
-}
-
-body {
-  font-family: "Arial", sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f4f4f4;
 }
 
 .phototeque {
