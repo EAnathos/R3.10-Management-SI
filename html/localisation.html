@@ -9,7 +9,7 @@
       integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ=="
       crossorigin=""
     />
-    <link rel="stylesheet" href="localisation.css" />
+    <link rel="stylesheet" href="../css/localisation.css" />
     <script src="initMap.js"></script>
     <title>Carte</title>
   </head>
@@ -18,7 +18,7 @@
       <!--Barre de navigation avec, sur la partie gauche, une image, et les liens Présentation, Activités, Services, Hébèrgement. Sur la partie droite, on doit retrouver un bouton Connexion et un bouton Inscription-->
       <nav>
         <ul>
-          <li><a href="index.html">Présentation</a></li>
+          <li><a href="../index.html">Présentation</a></li>
           <li><a href="html/activities.html">Activités</a></li>
           <li><a href="html/services.html">Services</a></li>
           <li><a href="html/hebergement.html">Hébergement</a></li>
@@ -30,10 +30,12 @@
         </ul>
       </nav>
     </header>
-    <div id="map"></div>
+    <main>
+      <div id="map"></div>
 
-    <p>A 30 km de Périgeux.</p>
-    <p>A 115 km de Bordeaux.</p>
+      <p>A 30 km de Périgeux.</p>
+      <p>A 115 km de Bordeaux.</p>
+    </main>
 
     <script
       src="https://unpkg.com/leaflet@1.3.1/dist/leaflet.js"

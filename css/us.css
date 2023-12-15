@@ -1,0 +1,13 @@
+.equipe img {
+  width: calc(33.33% - 10px);
+  margin-bottom: 10px;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+}
+.equipe {
+  max-width: 800px;
+  margin: 20px auto;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}

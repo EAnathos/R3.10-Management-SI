@@ -37,16 +37,59 @@ nav ul li a:hover {
   color: #f00;
 }
 
+body {
+  font-family: "Metrophobic";
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+h1 h2 h3 {
+  font-family: "Lobster";
+}
+
 .presentation {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 90vh;
-    background-color: rgb(98, 98, 98);
-    color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  background-color: rgb(98, 98, 98);
+  color: #fff;
 }
 
 .presentation h1 {
-    font-size: 5rem;
-    font-weight: 600;
+  font-size: 5rem;
+  font-weight: 600;
+}
+
+.phototeque {
+  max-width: 800px;
+  margin: 20px auto;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.phototeque h3 {
+  text-align: center;
+  color: #333;
+}
+
+.phototeque .conteneur {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.phototeque .conteneur img {
+  width: calc(33.33% - 10px);
+  margin-bottom: 10px;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.phototeque .conteneur img:hover {
+  transform: scale(1.1);
 }
