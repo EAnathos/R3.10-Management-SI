@@ -1,74 +1,26 @@
-const express = require("express");
-const mongoose = require("mongoose");
-const bodyParser = require("body-parser");
-
-const app = express();
-const PORT = 3000;
-
-// Connexion à MongoDB
-mongoose.connect(
-  "mongodb+srv://userAdmin1:u2TCnGu4ipaZ00Ob@clustersi.6znrvqy.mongodb.net/?retryWrites=true&w=majority"
-);
-
-// Définition du schéma utilisateur
-const userSchema = new mongoose.Schema({
-  email: { type: String, unique: true },
-  password: String,
-});
-
-const User = mongoose.model("User", userSchema);
-
-// Middleware pour parser le corps des requêtes
-app.use(bodyParser.urlencoded({ extended: true }));
-app.use(bodyParser.json());
-
-// Endpoint pour la création d'utilisateur
-app.post("/inscription", async (req, res) => {
-  const { email, password } = req.body;
-
+app.post("/signup", async (req, res) => {
   try {
-    // Vérification de l'unicité de l'email
-    const existingUser = await User.findOne({ email });
-    if (existingUser) {
-      return res
-        .status(400)
-        .json({ message: "Cette adresse email est déjà utilisée." });
-    }
-
-    // Création de l'utilisateur
-    const newUser = new User({ email, password });
+    const { name, email, password } = req.body;
+    const newUser = new User({ name, email, password });
     await newUser.save();
-
-    res.status(201).json({ message: "Utilisateur créé avec succès." });
+    res.status(201).json({ message: "Inscription réussie" });
   } catch (error) {
-    res.status(500).json({
-      message: "Une erreur est survenue lors de la création de l'utilisateur.",
-    });
+    console.error("Error during signup:", error);
+    res.status(500).json({ error: "Erreur lors de l'inscription" });
   }
 });
 
-// Endpoint pour la connexion de l'utilisateur
-app.post("/connexion", async (req, res) => {
-  const { email, password } = req.body;
-
+app.post("/login", async (req, res) => {
   try {
-    // Vérification des informations de connexion
+    const { email, password } = req.body;
     const user = await User.findOne({ email, password });
-    if (!user) {
-      return res
-        .status(401)
-        .json({ message: "Adresse email ou mot de passe incorrect." });
+    if (user) {
+      res.status(200).json({ message: "Connexion réussie" });
+    } else {
+      res.status(401).json({ error: "Identifiants incorrects" });
     }
-
-    res.status(200).json({ message: "Connexion réussie." });
   } catch (error) {
-    res
-      .status(500)
-      .json({ message: "Une erreur est survenue lors de la connexion." });
+    console.error("Error during login:", error);
+    res.status(500).json({ error: "Erreur lors de la connexion" });
   }
-});
-
-// Démarrage du serveur
-app.listen(PORT, () => {
-  console.log(`Serveur en cours d'exécution sur le port ${PORT}`);
 });
