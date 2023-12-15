@@ -15,18 +15,19 @@
   <body>
     <header>
       <!--Barre de navigation avec, sur la partie gauche, une image, et les liens Présentation, Activités, Services, Hébèrgement. Sur la partie droite, on doit retrouver un bouton Connexion et un bouton Inscription-->
-    <nav>
-      <ul>
-        <li><a href="index.html">Présentation</a></li>
-        <li><a href="activites.html">Activités</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="hebergement.html">Hébergement</a></li>
-      </ul>
-      <ul>
-        <li><a href="connexion.html">Connexion</a></li>
-        <li><a href="inscription.html">Inscription</a></li>
-      </ul>
-    </nav>
+      <nav>
+        <ul>
+          <li><a href="index.html">Présentation</a></li>
+          <li><a href="html/activities.html">Activités</a></li>
+          <li><a href="html/services.html">Services</a></li>
+          <li><a href="html/hebergement.html">Hébergement</a></li>
+          <li><a href="html/us.html">Nous</a></li>
+        </ul>
+        <ul>
+          <li><a href="connexion.html">Connexion</a></li>
+          <li><a href="inscription.html">Inscription</a></li>
+        </ul>
+      </nav>
     </header>
     <main>
       <div class="presentation rapide">
@@ -68,26 +69,19 @@
           vos enfants. Des soirées sont organisés hebdomadairement pour que l'on
           s'amuse tous ensemble.
         </p>
-        <button>Activités</button>
+        <button onclick="window.location.href = 'html/activities.html'">
+          Plus d'informations
+        </button>
       </div>
       <div class="presentation alentours">
         <h3>Alentours</h3>
         <p>
-          Le camping est proche de Ribérac, d'une forêt, et d'un plan d'eau. Parfait pour profiter de la nature
+          Le camping est proche de Ribérac, d'une forêt, et d'un plan d'eau.
+          Parfait pour profiter de la nature
         </p>
-        <button>La carte</button>
-      </div>
-      <div class="prensentation valeurs">
-        <h3>Nos valeurs</h3>
-        <p>
-          <em>Pingouins - Skis - Nature</em>, venez découvrir nos valeurs. Sous
-          les tilleuls allie profesionnalisme et passions afin de vous fournir
-          la meilleure expérience possible. L'écologie et le développement
-          durable font partie intégrante de notre identité. Tous nos employés
-          sont des animaux, la moitié sont des pingouins et l'autre, des rouges-gorges
-          Notre but à travers ce camping est de faire tomber les barrières entre
-          les deux espèces.
-        </p>
+        <button onclick="window.location.href = 'html/localisation.html'">
+          La carte
+        </button>
       </div>
       <div class ="phototeque">
         <h3>La phototeque</h3>
