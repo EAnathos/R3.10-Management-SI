@@ -7,11 +7,7 @@ const PORT = 3000;
 
 // Connexion à MongoDB
 mongoose.connect(
-  "mongodb+srv://userAdmin1:u2TCnGu4ipaZ00Ob@clustersi.6znrvqy.mongodb.net/?retryWrites=true&w=majority",
-  {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-  }
+  "mongodb+srv://userAdmin1:u2TCnGu4ipaZ00Ob@clustersi.6znrvqy.mongodb.net/?retryWrites=true&w=majority"
 );
 
 // Définition du schéma utilisateur

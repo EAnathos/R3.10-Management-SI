@@ -9,11 +9,7 @@ const PORT = process.env.PORT || 3000;
 
 // Connexion à la base de données
 mongoose.connect(
-  "mongodb+srv://userAdmin1:u2TCnGu4ipaZ00Ob@clustersi.6znrvqy.mongodb.net/SI_Database",
-  {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-  }
+  "mongodb+srv://userAdmin1:u2TCnGu4ipaZ00Ob@clustersi.6znrvqy.mongodb.net/SI_Database"
 );
 
 // Schéma du modèle utilisateur
