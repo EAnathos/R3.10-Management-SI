@@ -1,45 +1,82 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <!-- Nous chargeons les fichiers CDN de Leaflet. Le CSS AVANT le JS -->
-        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.1/dist/leaflet.css" integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ==" crossorigin="" />
-        <link rel="stylesheet" href="../css/localisation.css"/>
-        <script src="../js/initMap.js"></script>
-        <title>Carte</title>
-    </head>
-    <body>
-        <header>
-            <!--Barre de navigation avec, sur la partie gauche, une image, et les liens Présentation, Activités, Services, Hébèrgement. Sur la partie droite, on doit retrouver un bouton Connexion et un bouton Inscription-->
-          <nav>
-            <ul>
-              <li><a href="index.html">Présentation</a></li>
-              <li><a href="activites.html">Activités</a></li>
-              <li><a href="services.html">Services</a></li>
-              <li><a href="hebergement.html">Hébergement</a></li>
-            </ul>
-            <ul>
-              <li><a href="connexion.html">Connexion</a></li>
-              <li><a href="inscription.html">Inscription</a></li>
-            </ul>
-          </nav>
-        </header>
-        <main>
-            <div id="map"></div>
-            
-            <div id="aProximite">
-                <p>a</p>
-                <p>a</p>
-                <p>a</p>
-                <p>A 30 km de Périgeux.</p>
-                <p>A 115 km de Bordeaux.</p>
-                <p>A 82 km de Lascaux 2.</p>
-                <p>A 71 km du parc du Bournat.</p>
-                <p>A 77 km du parc du Thot.</p>
-                <p>A 78 km de la maison de Reignac.</p>
-            </div>            
+  <head>
+    <meta charset="utf-8" />
+    <!-- Nous chargeons les fichiers CDN de Leaflet. Le CSS AVANT le JS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.3.1/dist/leaflet.css"
+      integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ=="
+      crossorigin=""
+    />
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/localisation.css" />
+    <script src="initMap.js"></script>
+    <title>Carte</title>
+  </head>
+  <body>
+    <header>
+      <!--Barre de navigation avec, sur la partie gauche, une image, et les liens Présentation, Activités, Services, Hébèrgement. Sur la partie droite, on doit retrouver un bouton Connexion et un bouton Inscription-->
+      <nav>
+        <ul>
+          <li><a href="../index.html">Accueil</a></li>
+          <li><a href="activities.html">Activités</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="lodging.html">Hébergement</a></li>
+          <li><a href="localisation.html">Nous trouver</a></li>
+        </ul>
+        <ul>
+          <li><a href="connexion.html">Connexion</a></li>
+          <li><a href="inscription.html">Inscription</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div id="map"></div>
 
-            <script src="https://unpkg.com/leaflet@1.3.1/dist/leaflet.js" integrity="sha512-/Nsx9X4HebavoBvEBuyp3I7od5tA0UzAxs+j83KgC8PU0kgB4XiK4Lfe4y4cgBtaRJQEIFCW+oC506aPT2L1zw==" crossorigin=""></script> 
-        </main>
-    </body>
+    <p>A 30 km de Périgeux.</p>
+    <p>A 115 km de Bordeaux.</p>
+
+    <script
+      src="https://unpkg.com/leaflet@1.3.1/dist/leaflet.js"
+      integrity="sha512-/Nsx9X4HebavoBvEBuyp3I7od5tA0UzAxs+j83KgC8PU0kgB4XiK4Lfe4y4cgBtaRJQEIFCW+oC506aPT2L1zw=="
+      crossorigin=""
+    ></script>
+    <footer>
+      <div class="footer-content">
+        <div class="footer-column">
+          <h3>Contact</h3>
+          <p>Email: info@souslestilleuls.com</p>
+          <p>Téléphone: +33 123 456 789</p>
+        </div>
+        <div class="footer-column">
+          <h3>Adresse</h3>
+          <p>123 Rue des Tilleuls</p>
+          <p>75000 Ville Tilleul</p>
+        </div>
+        <div class="footer-column">
+          <h3>Suivez-nous</h3>
+          <ul class="social-icons">
+            <li>
+              <a href="#" target="_blank"
+                ><img src="../images/facebook-icon.png" alt="Facebook"
+              /></a>
+            </li>
+            <li>
+              <a href="#" target="_blank"
+                ><img src="../images/twitter-icon.png" alt="Twitter"
+              /></a>
+            </li>
+            <li>
+              <a href="#" target="_blank"
+                ><img src="../images/instagram-icon.png" alt="Instagram"
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2023 Sous les tilleuls. Tous droits réservés.</p>
+      </div>
+    </footer>
+  </body>
 </html>
