@@ -1,5 +1,10 @@
-#map{ /* la carte DOIT avoir une hauteur sinon elle n'apparaît pas */
-    height:60vh;
-    width:40vw;
-    float: right;
+body {
+  font-family: "Arial", sans-serif;
+}
+
+#map {
+  /* la carte DOIT avoir une hauteur sinon elle n'apparaît pas */
+  height: 60vh;
+  width: 40vw;
+  float: right;
 }

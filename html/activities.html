@@ -4,51 +4,142 @@
     <meta charset="UTF-8" />
     <title>Sous les tilleuls - Activités</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="css/style.css" rel="stylesheet" />
-    <link href="css/activities.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="stylesheet" href="../css/global.css" />
+    <link rel="stylesheet" href="../css/activities.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   </head>
   <body>
     <header>
-      <nav></nav>
+      <nav>
+        <ul>
+          <li><a href="../index.html">Accueil</a></li>
+          <li><a href="activities.html">Activités</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="lodging.html">Hébergement</a></li>
+          <li><a href="localisation.html">Nous trouver</a></li>
+        </ul>
+        <ul>
+          <li><a href="connexion.html">Connexion</a></li>
+          <li><a href="inscription.html">Inscription</a></li>
+        </ul>
+      </nav>
     </header>
     <main>
       <h1>Activités gratuites</h1>
-      <p>
-        Lorsque vous rejoignez notre camping, vous avez accès à un tas
-        d'activités gratuites
-      </p>
-      <ul>
-        <li>Piscine</li>
-        <li>Mini-golf</li>
-        <li>...</li>
+      <ul class="activities-list">
+        <li>
+          <div class="activity-card">
+            <img src="../images/pool.jpg" alt="Piscine" />
+            <p>Piscine</p>
+          </div>
+        </li>
+        <li>
+          <div class="activity-card">
+            <img src="../images/mini-golf.jpg" alt="Mini-golf" />
+            <p>Mini-golf</p>
+          </div>
+        </li>
+        <li>
+          <div class="activity-card">
+            <img src="../images/fishing.jpg" alt="Pêche" />
+            <p>Pêche</p>
+          </div>
+        </li>
+        <li>
+          <div class="activity-card">
+            <img src="../images/bubble.jpg" alt="Soirée mousse" />
+            <p>Soirée mousse</p>
+          </div>
+        </li>
+        <!-- Ajoutez d'autres activités de la même manière -->
       </ul>
       <h1>Activités payantes</h1>
-      <p>
-        Certaines activités sont payantes, mais elles sont toutes encadrées par
-        des professionnels et sont donc de qualité supérieure.
-      </p>
-      <ul>
-        <li>Ski sur Pingouin</li>
-        <li>Récolte de bananes dorées</li>
-        <li>...</li>
+      <ul class="activities-list">
+        <li>
+          <div class="activity-card">
+            <img src="../images/pingouin.jpg" alt="Ski sur Pingouin" />
+            <p>Ski sur Pingouin</p>
+          </div>
+        </li>
+        <li>
+          <div class="activity-card">
+            <img src="../images/bananas.jpg" alt="Chasse à la banane dorée" />
+            <p>Chasse à la banane dorée</p>
+          </div>
+        </li>
       </ul>
       <h1>Nos animations</h1>
-      <p>
-        Chaque jour de la semaine, nous vous proposons des animations gratuites
-        !
-      </p>
-      <ul>
-        <li>Lundi : Chasse aux trésors</li>
-        <li>Mardi : Concours de pêche</li>
-        <li>Mercredi : Soirée mousse</li>
-        <li>Jeudi : Soirée dansante</li>
-        <li>Vendredi : Soirée karaoké</li>
-        <li>Samedi : Soirée jeux de société</li>
-        <li>Dimanche : Soirée cinéma</li>
+      <ul class="activities-list">
+        <li>
+          <div class="activity-card">
+            <img src="../images/treasures-hunt.jpg" alt="Chasse aux trésors" />
+            <p>Lundi : Chasse aux trésors</p>
+          </div>
+        </li>
+        <li>
+          <div class="activity-card">
+            <img src="../images/Soirée-dansante.jpg" alt="Soirée dansante" />
+            <p>Mardi : Sooirée dansante</p>
+          </div>
+        </li>
+        <li>
+          <div class="activity-card">
+            <img src="../images/Soirée-karaoke.jpg" alt="Soirée karakoé" />
+            <p>Mercredi : Soirée karakoé</p>
+          </div>
+        </li>
+        <li>
+          <div class="activity-card">
+            <img src="../images/Soirée-cinéma.jpg" alt="Soirée cinéma" />
+            <p>Jeudi : Soirée cinéma</p>
+          </div>
+        </li>
+        <li>
+          <div class="activity-card">
+            <img src="../images/Soirée-jeux.jpg" alt="Soirée jeux" />
+            <p>Vendredi : Soirée jeux</p>
+          </div>
+        </li>
+        <!-- Ajoutez d'autres animations de la même manière -->
       </ul>
     </main>
-    <footer></footer>
+    <footer>
+      <div class="footer-content">
+        <div class="footer-column">
+          <h3>Contact</h3>
+          <p>Email: info@souslestilleuls.com</p>
+          <p>Téléphone: +33 123 456 789</p>
+        </div>
+        <div class="footer-column">
+          <h3>Adresse</h3>
+          <p>123 Rue des Tilleuls</p>
+          <p>75000 Ville Tilleul</p>
+        </div>
+        <div class="footer-column">
+          <h3>Suivez-nous</h3>
+          <ul class="social-icons">
+            <li>
+              <a href="#" target="_blank"
+                ><img src="../images/facebook.jpg" alt="Facebook"
+              /></a>
+            </li>
+            <li>
+              <a href="#" target="_blank"
+                ><img src="../images/X.jpg" alt="Twitter"
+              /></a>
+            </li>
+            <li>
+              <a href="#" target="_blank"
+                ><img src="../images/instagram.png" alt="Instagram"
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2023 Sous les tilleuls. Tous droits réservés.</p>
+      </div>
+    </footer>
   </body>
 </html>
